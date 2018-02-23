@@ -6,6 +6,20 @@ The code is mainly borrowed from [Limin Wang's repo](https://github.com/wanglimi
 I've slightly changed the interface to facilitate my own usage.  
 
 
+## Ref Workflow
+UCF101をダウンロードしておいてから実行する
+
+1. DensFlowデータ作成
+```
+python build_of.py --src_dir ./UCF-101 --out_dir ./ucf101_frames --df_path <path to dense_flow.exe>
+```
+2. FileList作成
+```
+python build_file_list.py --frame_path ./ucf101_frames --out_list_path ./settings
+```
+
+
+
 ## Interface
 Option | Name | Default | Note 
 :---   | :--- | :---    | :---
